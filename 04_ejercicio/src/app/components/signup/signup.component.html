@@ -1,0 +1,40 @@
+<ng-container *ngIf="loading">
+  <app-loading></app-loading>
+</ng-container>
+
+<div class="vh-100 d-flex justify-content-center align-items-center">
+  <form class="sign-up">
+    <div class="form-floating mb-3">
+      <input id="inputEmail" type="email" class="form-control" placeholder="Ingrese su correo electrónico"
+        formControlName="email">
+      <label for="inputEmail">Ingrese su correo electrónico</label>
+      <!-- <small *ngIf="errorsEmail()" class="is-invalid">
+        <i class="bi bi-exclamation-octagon"></i> Ingrese un correo electrónico valido
+      </small> -->
+    </div>
+    <div class="form-floating mb-3">
+      <input id="inputPassword" type="password" class="form-control" placeholder="Ingrese una contraseña"
+        formControlName="password">
+      <label for="inputPassword">Ingrese una contraseña</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input id="inputPasswordAgain" type="password" class="form-control" placeholder="Ingrese nuevamente la contraseña"
+        formControlName="passwordAgain">
+      <label for="inputPasswordAgain">Ingrese nuevamente la contraseña</label>
+      <!-- <small *ngIf="errorsPassword() || errorsPasswordAgain()" class="is-invalid">
+        <i class="bi bi-exclamation-octagon"></i> Contraseña invalida
+      </small> -->
+    </div>
+    <div class="mb-3">
+
+      <!-- <p class="text-warning">
+        <i class="bi bi-info-circle"></i> Nota: La contraseña tiene que tener mas de {{minLengthPassword}} caracteres
+      </p> -->
+
+      <!-- <p *ngIf="invalidPasswords()" class="text-danger">
+        <i class="bi bi-exclamation-triangle"></i> Las contraseñas no coinciden
+      </p> -->
+    </div>
+    <button type="submit" class="btn btn-outline-primary w-100 py-3 fw-bold">Registrarse</button>
+  </form>
+</div>

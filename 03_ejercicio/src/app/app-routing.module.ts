@@ -6,7 +6,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ErrorComponent } from './components/error/error.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+  { path: '', redirectTo: 'signin', pathMatch: 'full' },
   { path: 'welcome', component: WelcomeComponent, title: 'Bienvenido' },
   { path: 'signin', component: SigninComponent, title: 'Iniciar sección' },
   { path: 'signup', component: SignupComponent, title: 'Registrarse' },
