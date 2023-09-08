@@ -1,0 +1,5 @@
+<form class="container pt-5" [formGroup]="this.signupForm" (ngSubmit)="signIn(signupForm.value)">
+  <input type="text" name="nombre" placeholder="Nombre" formControlName="nombre">
+  <input type="password" name="clave" placeholder="Clave" formControlName="clave">
+  <input type="submit" value="Ingresar">
+</form>
