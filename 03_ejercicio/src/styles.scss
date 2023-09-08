@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --bs-body-color: #ffffff;
+  --bs-body-bg: #11191f;
+}
+
+.form-control,
+.form-floating :focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+}
+
+.sign-in,
+.sign-up {
+  width: 300px;
+}
+
+.navbar {
+  & .nav-link {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    & :hover {
+      color: var(--bs-primary);
+    }
+  }
+
+  & .active {
+    background-color: var(--bs-primary);
+    border-radius: 0.25rem;
+    &--error {
+      background-color: var(--bs-danger);
+    }
+  }
+}
+
+.btn {
+  &-success {
+    box-shadow: 0 0.25rem #25f393;
+    transition: transform 400ms, box-shadow 400ms;
+    &:active {
+      transform: translateY(0.25rem);
+      box-shadow: none;
+    }
+  }
+}
